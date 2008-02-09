@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+<style type="text/css">
+  .imagenNO {display:none;}
+  .imagen {display:block;}
+</style>
+<script type="text/javascript">
+
+function mostrarImagenes(recolocar) {
+/** recolocar indica que se recoloque el documento **/
+/** si no recolocamos, solo ocultamos las imágenes **/
+
+  for (x=0;x<document.images.length;x++){
+    if (recolocar)
+      document.images[x].className = "imagen";
+    else
+      document.images[x].style.visibility = "visible";
+  }
+}
+
+function ocultarImagenes(recolocar) {
+
+/** recolocar indica que se recoloque el documento **/
+/** si no recolocamos, solo ocultamos las imágenes **/
+
+  for (x=0;x<document.images.length;x++){
+    if (recolocar)
+      document.images[x].className = "imagenNO";
+    else
+      document.images[x].style.visibility = "hidden";
+  }
+}
+</script>
+<title>Ocultar imagenes</title>
+</head>
+<body>
+
+<h1>Ocultar imagenes</h1>
+
+ <p>Esto es un documento de prueba. Este parrafo tiene una imagen debajo. Esto
+es un documento de prueba. Este parrafo tiene una imagen debajo. Esto es un
+documento de prueba. Este parrafo tiene una imagen debajo. Esto es un documento
+de prueba. Este parrafo tiene una imagen debajo.Esto es un documento de prueba.
+Este parrafo tiene una imagen debajo. Esto es un documento de prueba. Este parrafo
+tiene una imagen debajo. Esto es un documento de prueba. Este parrafo tiene
+una imagen debajo. Esto es un documento de prueba. Este parrafo tiene una imagen
+debajo.</p>
+<p align="center"><img class="imagen" id="i1" src="http://lineadecodigo.com/wp-content/uploads/2007/10/lineadecodigo.miniatura.jpg">
+</p>
+
+<p> <img class="imagen" id="i2" src="http://lineadecodigo.com/wp-content/uploads/2007/05/silverlight.gif" style="float:left;">
+Esto es un documento de prueba. Este parrafo tiene una imagen a su izquierda.
+Esto es un documento de prueba. Este parrafo tiene una imagen a su izquierda.
+Esto es un documento de prueba. Este parrafo tiene una imagen a su izquierda.
+Esto es un documento de prueba. Este parrafo tiene una imagen a su izquierda.Esto
+es un documento de prueba. Este parrafo tiene una imagen a su izquierda. Esto
+es un documento de prueba. Este parrafo tiene una imagen a su izquierda. Esto
+es un documento de prueba. Este parrafo tiene una imagen a su izquierda. Esto
+es un documento de prueba. Este parrafo tiene una imagen a su izquierda.Esto
+es un documento de prueba. Este parrafo tiene una imagen a su izquierda. Esto
+es un documento de prueba. Este parrafo tiene una imagen a su izquierda. Esto
+es un documento de prueba. Este parrafo tiene una imagen a su izquierda. Esto
+es un documento de prueba. Este parrafo tiene una imagen a su izquierda.Esto
+es un documento de prueba. Este parrafo tiene una imagen a su izquierda. Esto
+es un documento de prueba. Este parrafo tiene una imagen a su izquierda. Esto
+es un documento de prueba. Este parrafo tiene una imagen a su izquierda. Esto
+es un documento de prueba. Este parrafo tiene una imagen a su izquierda.Esto
+es un documento de prueba. Este parrafo tiene una imagen a su izquierda. Esto
+es un documento de prueba. Este parrafo tiene una imagen a su izquierda. Esto
+es un documento de prueba. Este parrafo tiene una imagen a su izquierda. Esto
+es un documento de prueba. Este parrafo tiene una imagen a su izquierda.</p>
+<p align="center"><a href="#" onClick="ocultarImagenes(true);">Quitar im&aacute;genes
+recolocando</a> - <a href="#" onClick="ocultarImagenes(false);">Quitar im&aacute;genes
+sin recolocar</a> - <a href="#" onClick="mostrarImagenes(true);">Mostrar im&aacute;genes
+recolocando</a> - <a href="#" onClick="mostrarImagenes(false);">Mostrar im&aacute;genes
+sin recolocar</a></p>
+
+<hr>
+Art&iacute;culo disponible en: <a href="http://lineadecodigo.com/2007/10/18/ocultar-imagenes-con-css/">http://lineadecodigo.com/2007/10/18/ocultar-imagenes-con-css/</a><br/>
+<a href="http://lineadecodigo.com" title="Linea de Codigo">lineadecodigo.com</a>
+
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<h:html xmlns:h="http://www.w3.org/1999/xhtml"
+   xmlns="http://www.w3.org/2002/xforms"
+   xmlns:ev="http://www.w3.org/2001/xml-events" >
+
+<h:head>
+<h:title>Borrar Campos</h:title>
+
+<model id="mipersona">
+  <instance>
+    <persona xmlns="">
+      <nombre></nombre>
+      <apellido></apellido>
+      <edad></edad>
+      <domicilio></domicilio>
+    </persona>
+  </instance>
+</model>
+
+</h:head>
+<h:body>
+
+<h:h1>Borrado de campos</h:h1>
+
+<input ref="/persona/nombre">
+  <label>Persona: </label>
+</input>
+
+<h:br/>
+
+<input ref="/persona/apellido">
+  <label>Apellido: </label>
+</input>
+
+<h:br/>
+
+<input ref="/persona/edad">
+  <label>Edad: </label>
+</input>
+
+<h:br/>
+
+
+<textarea ref="/persona/domicilio">
+  <label>Domicilio: </label>
+</textarea>
+
+<h:br/>
+
+<trigger>
+  <label>Borrar</label>
+  <reset ev:event="DOMActivate" model="mipersona"/>
+</trigger>
+
+	<h:br/><h:br/>
+	<h:hr/>
+	Articulo disponible en: <h:a href="http://lineadecodigo.com/2007/11/25/borrado-de-campos-en-xforms/">http://lineadecodigo.com/2007/11/25/borrado-de-campos-en-xforms/</h:a><h:br/>
+	<h:a href="http://lineadecodigo.com" title="Linea de Codigo">lineadecodigo.com</h:a>
+
+
+</h:body>
+</h:html>
