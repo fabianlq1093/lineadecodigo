@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Linea Geodesica</title>
+<script src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=ABQIAAAA1gybajGje1CxFHgzphPqhBTkhzudNWd_u13Cffh29fB-9TXQzxQVh6gduUCW9NeYlGOi-AFsvIHQpg"
+      type="text/javascript"></script>
+
+<script type="text/javascript">
+
+function load(){
+  if (GBrowserIsCompatible()) {
+    var map = new GMap2(document.getElementById("mapa"));
+    map.setCenter(new GLatLng(40.674389,-4.700432), 1);
+    
+    
+    var lineageodesica={geodesic:true};
+	var linearecta={geodesic:false};
+       
+    var geodesica = new GPolyline([
+      new GLatLng(51.5002, -0.1262),  // Londres
+      new GLatLng(47.6801, -122.3300)  // Seattle
+      ], "#ff0000", 5, 0.7, lineageodesica);
+    map.addOverlay(geodesica);
+    
+    // Calculamos la distancia en kilometros
+    var distancia = parseInt(geodesica.getLength()/1000);
+    
+    document.getElementById("distancia").innerHTML = distancia;
+    
+  }
+}
+
+</script>
+</head>
+<body onload="load();" onunload="GUnload();">
+<h1>Linea Geodesica</h1>
+
+<div id="mapa" style="width: 400px;height: 300px;">
+</div>
+
+La distancia entre Londres y Seattle es de <span id="distancia"></span> Km.
+
+<hr>
+Art&iacute;culo disponible en: <a href="http://lineadecodigo.com/2007/12/12/generando-lineas-geodesicas-en-google-maps/">http://lineadecodigo.com/2007/12/12/generando-lineas-geodesicas-en-google-maps/</a><br/>
+<a href="http://lineadecodigo.com" title="Linea de Codigo">lineadecodigo.com</a>
+
+
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+<h:html xmlns:h="http://www.w3.org/1999/xhtml"
+   xmlns="http://www.w3.org/2002/xforms">
+   <h:head>
+     <h:title>Mi primer formulario XForms</h:title>
+   
+    <model>
+      <instance>
+        <data xmlns="">
+          <nombre>Victor</nombre>
+          <apellido>Cuervo</apellido>
+        </data>
+      </instance>
+
+
+      <submission action="http://example.com/buscar"
+         method="post" id="busqueda"/>
+
+    </model>
+   </h:head>
+   <h:body>
+   
+   <h:h1>Mi primer formulario XForms</h:h1>
+   <h:p>
+
+
+   <input ref="nombre">
+     <label>Nombre:</label>
+     <hint>Pon el nombre de la persona a buscar</hint>
+   </input>
+
+   <h:br/>
+   
+   <input ref="apellido">
+     <label>Apellido:</label>
+     <hint>Pon el apellido de la persona a buscar</hint>
+   </input>
+
+   <h:br/>
+
+   <submit submission="busqueda">
+     <label>Buscar</label>
+   </submit>
+
+	<h:br/><h:br/>
+	<h:hr/>
+	Articulo disponible en: <h:a href="http://lineadecodigo.com/2007/11/24/mi-primer-formulario-xforms/">http://lineadecodigo.com/2007/11/24/mi-primer-formulario-xforms/</h:a><h:br/>
+	<h:a href="http://lineadecodigo.com" title="Linea de Codigo">lineadecodigo.com</h:a>
+
+
+   </h:p>
+   </h:body>
+</h:html>

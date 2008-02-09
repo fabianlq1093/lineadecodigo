@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<script src="http://maps.google.com/maps?file=api&amp;v=2.x&amp;key=ABQIAAAA1gybajGje1CxFHgzphPqhBTkhzudNWd_u13Cffh29fB-9TXQzxQVh6gduUCW9NeYlGOi-AFsvIHQpg"
+      type="text/javascript"></script>
+      
+<script type="text/javascript">
+
+//<![CDATA[
+    
+function load(){
+  if (GBrowserIsCompatible()) {
+    var map = new GMap2(document.getElementById("mapa"));
+    map.setCenter(new GLatLng(40.674389,-4.700432), 12);
+    
+    panel_ruta = document.getElementById("direcciones");
+	ruta = new GDirections(map, panel_ruta);
+	ruta.load("from: Madrid to: Avila",{locale: 'es_ES'});
+  }
+}
+
+//]]>
+</script>
+<title>Comunicando dos direcciones con Google Maps</title>
+<style type="text/css">v\:* {behavior:url(#default#VML);}</style>
+</head>
+<body onload="load();" onunload="GUnload();">
+
+<h1>Comunicando dos direcciones con Google Maps</h1>
+
+<table>
+  <tr>
+    <th>Itinerario</th><th>Mapa</th>
+  </tr>
+  <tr>
+    <td valign="top"><div id="direcciones" style="width: 275px"></div></td>
+    <td valign="top"><div id="mapa" style="width: 310px; height: 400px"></div></td>
+  </tr>
+</table>    
+
+<hr/>
+Art&iacute;culo disponible en: <a href="http://lineadecodigo.com/2007/06/09/comunicando-dos-direcciones-en-google-maps/">http://lineadecodigo.com/2007/06/09/comunicando-dos-direcciones-en-google-maps/</a><br/>
+<a href="http://lineadecodigo.com" title="Linea de Codigo">lineadecodigo.com</a>
+
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" 
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<!--
+@file mi-primer-grafico-svg.svg
+@version 1.1
+@author Linea de Codigo (http://lineadecodigo.com)
+@date 28-noviembre-2007
+@url http://lineadecodigo.com/2007/03/04/pasar-parametros-a-un-applet/
+@description Ejemplo de como crear el primer gráfico SVG  
+-->
+
+<svg xmlns="http://www.w3.org/2000/svg">
+    <circle cx="600" cy="200" r="100" fill="red" />
+</svg>

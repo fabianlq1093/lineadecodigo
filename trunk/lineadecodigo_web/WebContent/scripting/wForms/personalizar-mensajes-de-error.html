@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Personalizar mensajes de error</title>
+
+<script type="text/javascript" src="http://lineadecodigo.com/js/wforms/wforms.js"></script>
+<script type="text/javascript">
+wFORMS.behaviors['validation'].errMsg_required = "Campo obligatorio";
+wFORMS.behaviors['validation'].errMsg_alpha = "El campo tiene que ser alfabético";
+wFORMS.behaviors['validation'].errMsg_email = "El campo tiene que ser un email";
+wFORMS.behaviors['validation'].errMsg_integer = "El campo tiene que ser un numero entero";
+wFORMS.behaviors['validation'].errMsg_float = "El campo tiene que ser un numero decimal";
+wFORMS.behaviors['validation'].errMsg_alphanum =" El campo tienen que ser alfanumérico";
+wFORMS.behaviors['validation'].errMsg_date = "El campo tiene que ser una fecha";
+wFORMS.behaviors['validation'].errMsg_custom = "Mensaje personalizado";
+wFORMS.behaviors['validation'].errMsg_notification = "%% error(s) detectado(s). El formulario no se enviará.\nPor favor, chequea la información suministrada.";
+</script>
+
+<style type="text/css">
+  .errFld {border: 1px solid #F00; background: #FF6347;}
+  .errMsg { color: #C33; }
+</style>
+
+</head>
+<body>
+<h1>Personalizar mensajes de error</h1>
+
+Formulario con todas las validaciones posibles. Cargado con valores erroneos:
+
+<form>
+<label for="obligatorio">Obligatorio: </label><input type="text" id="obligatorio" class="required"><span id="obligatorio-E"></span><br>
+<label for="alfabetico">Alfabetico: </label><input type="text" id="alfabetico" class="validate-alpha" value="12345"><span id="alfabetico-E"></span><br>
+<label for="email">E-Mail: </label><input type="text" id="email" class="validate-email" value="hola-arroba-google.com"><span id="email-E"></span><br>
+<label for="entero">Entero: </label><input type="text" id="entero" class="validate-integer" value="valor erroneo"><span id="entero-E"></span><br>
+<label for="decimal">Decimal: </label><input type="text" id="decimal" class="validate-float" value="valor erroneo"><span id="decimal-E"></span><br>
+<label for="alfanumerico">Alfanumerico: </label><input type="text" id="alfanumerico" class="validate-alphanum" value="()+*?¿"><span id="alfanumerico-E"></span><br>
+<label for="fecha">Fecha: </label><input type="text" id="fecha" class="validate-date" value="10 de enero"><span id="fecha-E"></span><br>
+<input type="submit" value="Enviar"/>
+</form>
+<br>
+
+<br><br>
+<hr>
+Art&iacute;culo disponible en: <a href="http://lineadecodigo.com/2007/12/09/personalizar-mensajes-de-error-en-wforms/">http://lineadecodigo.com/2007/12/09/personalizar-mensajes-de-error-en-wforms/</a><br/>
+<a href="http://lineadecodigo.com" title="Linea de Codigo">lineadecodigo.com</a>
+
+
+
+</body>
+</html>

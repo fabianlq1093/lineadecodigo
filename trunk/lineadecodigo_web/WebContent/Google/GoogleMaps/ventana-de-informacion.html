@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<script src="http://maps.google.com/maps?file=api&amp;v=2.x&amp;key=ABQIAAAA1gybajGje1CxFHgzphPqhBTkhzudNWd_u13Cffh29fB-9TXQzxQVh6gduUCW9NeYlGOi-AFsvIHQpg"
+      type="text/javascript"></script>
+      
+<script type="text/javascript">
+
+//<![CDATA[
+    
+function load(){
+  if (GBrowserIsCompatible()) {
+	// Nos posicionamos en Bejar
+    var map = new GMap2(document.getElementById("mapa"));
+    map.setCenter(new GLatLng(40.383651,-5.765891), 15);
+
+	// Posicionamos la Casa Rural Los Tejos
+	map.openInfoWindow(new GLatLng(40.381351,-5.764591),
+                           document.createTextNode("Casa Rural Los Tejos"));
+
+
+
+  }
+}
+
+//]]>
+</script>
+<title>Añadir una ventana de información en Google Maps</title>
+</head>
+<body onload="load();" onunload="GUnload();">
+<h1>Añadir una ventana de información en Google Maps</h1>
+
+<div id="mapa" style="width: 400px;height: 300px;">
+</div>
+
+<hr/>
+Art&iacute;culo disponible en: <a href="http://lineadecodigo.com/2008/01/22/abrir-una-ventana-de-informacion-en-google-maps/">http://lineadecodigo.com/2008/01/22/abrir-una-ventana-de-informacion-en-google-maps/</a><br/>
+<a href="http://lineadecodigo.com" title="Linea de Codigo">lineadecodigo.com</a>
+
+
+</body>
+</html>

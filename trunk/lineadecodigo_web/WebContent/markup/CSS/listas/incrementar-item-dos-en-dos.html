@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Incrementar item de 2 en 2</title>
+<style type="text/css">
+ol {counter-reset: item -1;}
+li { display: block; }
+li:before {
+	content: counter(item) ". ";
+	counter-increment: item 2;
+}
+</style>
+</head>
+<body>
+
+<h1>Incrementar items de 2 en 2</h1>
+
+Lista que incrementa los items de 2 en 2.
+
+<ol>
+<li>Primer elemento</li>
+<li>Segundo elemento</li>
+<li>Tercer elemento</li>
+<li>Cuarto elemento</li>
+<li>Quinto elemento</li>
+</ol>
+
+
+<br><br>
+<hr>
+Art&iacute;culo disponible en: <a href="http://lineadecodigo.com/2008/01/03/incrementar-items-de-una-lista-html-de-dos-en-dos/">http://lineadecodigo.com/2008/01/03/incrementar-items-de-una-lista-html-de-dos-en-dos/</a><br/>
+<a href="http://lineadecodigo.com" title="Linea de Codigo">lineadecodigo.com</a>
+
+</body>
+</html>

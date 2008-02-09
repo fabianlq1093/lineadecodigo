@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Valor inicio de la lista</title>
+<style type="text/css">
+ol {counter-reset: item 2;}
+li { display: block; }
+li:before {
+	content: counter(item) ". ";
+	counter-increment: item;
+}
+</style>
+</head>
+<body>
+
+<h1>Valor inicio de la lista</h1>
+
+Lista que va a empezar por el n&uacute;mero 3.
+
+<ol>
+<li>Primer elemento</li>
+<li>Segundo elemento</li>
+<li>Tercer elemento</li>
+<li>Cuarto elemento</li>
+<li>Quinto elemento</li>
+</ol>
+
+
+<br><br>
+<hr>
+Art&iacute;culo disponible en: <a href="http://lineadecodigo.com/2008/01/01/numero-de-inicio-de-una-lista-con-css/">http://lineadecodigo.com/2008/01/01/numero-de-inicio-de-una-lista-con-css/</a><br/>
+<a href="http://lineadecodigo.com" title="Linea de Codigo">lineadecodigo.com</a>
+
+
+</body>
+</html>
