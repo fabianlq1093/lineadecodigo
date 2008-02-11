@@ -1,4 +1,4 @@
-package com.lineadecodigo.java.util;
+package com.lineadecodigo.java.util.collections;
 
 /**
  * @file MaximoMinimoConjunto.java
