@@ -1,4 +1,4 @@
-package com.lineadecodigo.java.basico;
+package com.lineadecodigo.java.basico.arrays;
 
 /**
  * @file CopiarArrays.java
