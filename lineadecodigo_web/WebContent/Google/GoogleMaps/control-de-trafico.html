@@ -14,22 +14,8 @@ function load(){
     map.addControl(new GSmallMapControl());
     map.addControl(new GMapTypeControl());
 
-//Solo añade el tráfico, no el boton para controlarlo
-map.addOverlay(new GTrafficOverlay());    
-    
-//   ll=47.645962,-122.236633&spn=0.37193,0.933838&z=10&om=1&layer=t
- 
- /*
- 
- VALIDAR SI YA LO HAN LIBERADO
- 
-script src="../src/extmaptypecontrol.js" type="text/javascript"
- 
-       var map = new GMap2(document.getElementById("map"));
-        map.addControl(new ExtMapTypeControl({showTraffic: true, showTrafficKey: true}));
-        map.setCenter(new GLatLng(37.441944, -122.141944), 13);
-        map.setMapType(G_SATELLITE_MAP);
- */
+	//Solo añade el tráfico, no el boton para controlarlo
+	map.addOverlay(new GTrafficOverlay());    
     
   }
 }
@@ -45,7 +31,7 @@ script src="../src/extmaptypecontrol.js" type="text/javascript"
 </div>
 
 <hr>
-Art&iacute;culo disponible en: <a href=""></a><br/>
+Art&iacute;culo disponible en: <a href="http://lineadecodigo.com/2009/01/18/anadir-control-de-trafico-con-google-maps/">http://lineadecodigo.com/2009/01/18/anadir-control-de-trafico-con-google-maps/</a><br/>
 <a href="http://lineadecodigo.com" title="Linea de Codigo">lineadecodigo.com</a>
 
 
