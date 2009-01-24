@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Modificando el estilo con jQuery</title>
+<script type="text/javascript" src="http://lineadecodigo.com/js/jquery/jquery.js"></script>
+<script type="text/javascript">
+ 
+$(document).ready(function(){
+ $("#cambiar").click(function() {
+	 $("p").css({'color':'red','font-size':'1.3em','background':'yellow'});
+   });
+
+});
+
+
+</script>
+</head>
+<body>
+<h1>Modificando el estilo</h1>
+
+<P>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ullamcorper sem a justo. Aenean metus. Quisque eu purus at leo vehicula laoreet. Aenean et libero. Curabitur rhoncus erat non quam. Sed sodales fringilla diam. Nulla velit sapien, fringilla elementum, ultrices nec, fringilla id, erat. Morbi at nibh eget justo molestie mattis. Ut eleifend dapibus ante. Sed vitae risus in est suscipit congue. Mauris suscipit ligula at lectus. </P>
+
+<button id="cambiar">Cambiar estilo</button>
+
+<br><br>
+<hr>
+Art&iacute;culo disponible en: <a href="http://lineadecodigo.com/2009/01/24/modificar-el-estilo-con-jquery/">http://lineadecodigo.com/2009/01/24/modificar-el-estilo-con-jquery/</a><br/>
+<a href="http://lineadecodigo.com" title="Linea de Codigo">lineadecodigo.com</a>
+
+
+</body>
+</html>
