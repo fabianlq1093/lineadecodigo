@@ -2,9 +2,9 @@ package com.lineadecodigo.java.util.collections;
 
 /**
  * @file Array2List.java
- * @version 1.1
+ * @version 1.2
  * @author Linea de Codigo (http://lineadecodigo.com)
- * @date   24-jun-2006
+ * @date   01-febrero-2009
  * @url    http://lineadecodigo.com/2007/06/30/convertir-un-array-en-una-lista/
  * @description Convertir un array en una lista mediante el framework Collections y el método .asList 
  */
@@ -21,14 +21,14 @@ public class Array2List {
 	    cadenas[2] = "Luis";
 
 	    // Declaramos una lista
-	    List lista = new ArrayList();
+	    List<String> lista = new ArrayList<String>();
 	   
 	    // Convertimos el array en una lista
 	    // mediante la clase estática Arrays
 	    lista = Arrays.asList(cadenas);
 
 	    // Obtenemos un iterador y recorremos la lista
-	    Iterator iter = lista.iterator();
+	    Iterator<String> iter = lista.iterator();
 
 	    while (iter.hasNext())
 	      System.out.println(iter.next());
