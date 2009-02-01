@@ -2,9 +2,9 @@ package com.lineadecodigo.java.util.collections;
 
 /**
  * @file ListarConjunto.java
- * @version 1.1
+ * @version 1.2
  * @author Linea de Codigo (http://lineadecodigo.com)
- * @date   31-julio-2007
+ * @date   01-febrero-2009
  * @url  http://lineadecodigo.com/2007/08/03/listar-un-conjunto/
  * @description Listar los elementos de un conjunto.  
  */
@@ -23,7 +23,7 @@ public class ListarConjunto {
 	    hs.add("Amaya"); // Los elementos solo pueden estar una vez
 	    hs.add("Javier");
 	   
-	    Iterator iter = hs.iterator();
+	    Iterator<String> iter = hs.iterator();
 	    while (iter.hasNext())
 	      System.out.println(iter.next());
 		
