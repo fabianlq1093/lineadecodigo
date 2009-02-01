@@ -2,9 +2,9 @@ package com.lineadecodigo.java.util.collections;
 
 /**
  * @file RecorrerListaHaciaAtras.java
- * @version 1.1
+ * @version 1.2
  * @author Linea de Codigo (http://lineadecodigo.com)
- * @date   16-julio-2007
+ * @date   01-febrero-2009
  * @url    http://lineadecodigo.com/2007/07/19/recorrer-una-lista-hacia-atras-en-java/
  * @description Recorrer una lista desde el último elemento hacía el primero
  */
@@ -26,7 +26,7 @@ public class RecorrerListaHaciaAtras {
 	    list.add("Julio");
 
 	    // Obtenemos un Iterador y recorremos la lista.
-	    ListIterator iter = list.listIterator(list.size());
+	    ListIterator<String> iter = list.listIterator(list.size());
 	    while (iter.hasPrevious())
 	      System.out.println(iter.previous());
 
