@@ -5,7 +5,7 @@ package com.lineadecodigo.java.basico.system;
  * @version 1.0
  * @author Linea de Codigo (http://lineadecodigo.com)
  * @date   17-febrero-2009
- * @url    http://lineadecodigo.com/2009/02/17/conocer-el-sistema-operativo-con-java/
+ * @url    http://lineadecodigo.com/2009/02/18/conocer-el-sistema-operativo-con-java/
  * @description Saber el sistema operativo en el que se ejecuta el código java
  */
 
