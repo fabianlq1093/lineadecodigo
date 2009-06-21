@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Poner un icono en el Mapa</title>
+<script src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=ABQIAAAA1gybajGje1CxFHgzphPqhBTkhzudNWd_u13Cffh29fB-9TXQzxQVh6gduUCW9NeYlGOi-AFsvIHQpg" type="text/javascript"></script>
+
+<script type="text/javascript">
+
+var map;
+
+function load(){
+
+	if (GBrowserIsCompatible()) {
+		map = new GMap(document.getElementById("mapa"));
+		map.setCenter(new GLatLng(40.655997,-4.700518), 15);
+		
+		var marker =   new GMarker(new GLatLng(40.655997,-4.700518));
+		map.addOverlay(marker);
+  }
+}
+
+
+</script>
+</head>
+<body onload="load();" onunload="GUnload();">
+
+<h1>Poner un icono en el Mapa</h1>
+
+
+<div id="mapa" style="width: 400px;height: 300px;">
+</div>
+
+<hr>
+Art&iacute;culo disponible en: <a href="http://lineadecodigo.com/google/poner-un-icono-dentro-de-google-maps/">http://lineadecodigo.com/google/poner-un-icono-dentro-de-google-maps/</a><br/>
+<a href="http://lineadecodigo.com" title="Linea de Codigo">lineadecodigo.com</a>
+
+
+</body>
+</html>
