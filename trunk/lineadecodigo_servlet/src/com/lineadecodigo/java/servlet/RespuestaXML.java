@@ -1,35 +1,36 @@
 package com.lineadecodigo.java.servlet;
 
+/**
+ * @file RespuestaXML.java
+ * @version 1.0
+ * @author Linea de Codigo (http://lineadecodigo.com)
+ * @date   25.julio.2009
+ * @url  http://lineadecodigo.com/java/servlet-que-devuelve-xml/
+ * @description Servlet que devuelve una respuesta XML
+ */
+
 import java.io.IOException;
+import java.io.PrintWriter;
 import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-/**
- * Servlet implementation class for Servlet: RespuestaXML
- *
- */
- public class RespuestaXML extends javax.servlet.http.HttpServlet implements javax.servlet.Servlet {
-   static final long serialVersionUID = 1L;
-   
-    /* (non-Java-doc)
-	 * @see javax.servlet.http.HttpServlet#HttpServlet()
-	 */
-	public RespuestaXML() {
-		super();
-	}   	
-	
-	/* (non-Java-doc)
-	 * @see javax.servlet.http.HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
-	 */
+public class RespuestaXML extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+
+    public RespuestaXML() {
+        // TODO Auto-generated constructor stub
+    }
+
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-	}  	
-	
-	/* (non-Java-doc)
-	 * @see javax.servlet.http.HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
-	 */
+		response.setContentType("text/xml");
+		PrintWriter out = response.getWriter();
+		out.write("<?xml version=\"1.0\" encoding=\"UTF-8\"?><nombre>Linea de Codigo</nombre>");
+	}
+
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-	}   	  	    
+		doGet(request,response);
+	}
+
 }
