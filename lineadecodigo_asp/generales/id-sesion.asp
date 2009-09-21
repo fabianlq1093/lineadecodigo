@@ -12,7 +12,7 @@
 
 <br><br>
 <hr>
-Art&iacute;culo disponible en: <a href="http://lineadecodigo.com/javascript/cerrar-una-ventana-con-javascript/">http://lineadecodigo.com/javascript/cerrar-una-ventana-con-javascript/</a><br/>
+Art&iacute;culo disponible en: <a href="http://lineadecodigo.com/asp/obtener-id-de-sesion-en-asp/">http://lineadecodigo.com/asp/obtener-id-de-sesion-en-asp/</a><br/>
 <a href="http://lineadecodigo.com" title="Linea de Codigo">lineadecodigo.com</a>
 
 </body>
