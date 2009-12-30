@@ -6,8 +6,13 @@
  <body>
    <h1>Mis Libros</h1>
 
-   El numero de libros es de	
-   <xsl:value-of select="count(/libros/libro)"/>
+    <xsl:for-each select="libros/libro">
+    <p> 
+     <strong>Titulo:</strong><xsl:value-of select="titulo"/><br/>
+     <strong>Autor:</strong><xsl:value-of select="autor"/>
+    </p>
+   </xsl:for-each>
+
 
  </body>
  </html>
