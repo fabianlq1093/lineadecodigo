@@ -41,7 +41,7 @@
 
 <br><br>
 <hr>
-Art&iacute;culo disponible en: <a href="http://lineadecodigo.com/asp/xxx/">http://lineadecodigo.com/asp/xxx/</a><br/>
+Art&iacute;culo disponible en: <a href="http://lineadecodigo.com/asp/insertar-un-registro-en-una-bd-con-ado/">http://lineadecodigo.com/asp/insertar-un-registro-en-una-bd-con-ado/</a><br/>
 <a href="http://lineadecodigo.com" title="Linea de Codigo">lineadecodigo.com</a>
 
 </body>
