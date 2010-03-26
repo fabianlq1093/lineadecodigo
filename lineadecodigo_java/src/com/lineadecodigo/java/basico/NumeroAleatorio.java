@@ -5,7 +5,7 @@ package com.lineadecodigo.java.basico;
  * @version 1.2
  * @author Linea de Codigo (http://lineadecodigo.com)
  * @date   25-marzo-2007
- * @url    http://lineadecodigo.com/2007/04/07/numero-aleatorio-en-java/
+ * @url    http://lineadecodigo.com/java/numero-aleatorio-en-java/
  * @description Código para generar número aleatorios en Java entre 1 y 25 
  */
 
