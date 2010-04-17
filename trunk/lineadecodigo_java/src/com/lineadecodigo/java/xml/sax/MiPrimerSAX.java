@@ -6,7 +6,6 @@ import java.io.InputStream;
 import org.xml.sax.*;
 import javax.xml.parsers.*;
 
-
 /**
  * @file MiPrimerSAX.java
  * @version 1.0
@@ -16,14 +15,9 @@ import javax.xml.parsers.*;
  * @description Utilizar SAX para acceder al contenido de un fichero XML.  
  */
 
-
 public class MiPrimerSAX {
-
-	/**
-	 * @param args
-	 */
+	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		SAXParser parser = null;
 		   
 	    String xml = "<libro><titulo>EL Quijote</titulo><autor>Cervantes</autor></libro>";
