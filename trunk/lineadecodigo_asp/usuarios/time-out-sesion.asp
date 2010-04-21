@@ -23,7 +23,7 @@
 
 <br><br>
 <hr>
-Art&iacute;culo disponible en: <a href="http://lineadecodigo.com/asp/xxx/">http://lineadecodigo.com/asp/xxx/</a><br/>
+Art&iacute;culo disponible en: <a href="http://lineadecodigo.com/asp/gestionando-el-timeout-de-sesion-en-asp/">http://lineadecodigo.com/asp/gestionando-el-timeout-de-sesion-en-asp/</a><br/>
 <a href="http://lineadecodigo.com" title="Linea de Codigo">lineadecodigo.com</a>
 
 
