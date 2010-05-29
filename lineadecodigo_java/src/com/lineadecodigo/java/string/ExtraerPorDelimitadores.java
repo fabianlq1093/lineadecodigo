@@ -4,10 +4,10 @@ import java.util.StringTokenizer;
 
 /**
  * @file ExtraerPorDelimitadores.java
- * @version 1.0
+ * @version 1.1
  * @author Linea de Codigo (http://lineadecodigo.com)
  * @date   29-mayo-2010
- * @url    http://lineadecodigo.com/java/xxx/
+ * @url    http://lineadecodigo.com/java/http://lineadecodigo.com/java/extraer-contenido-separado-por-delimitadores-con-java//
  * @description Extraer contenido de una cadena de texto atendiendo a un delimitador  
  */
 
