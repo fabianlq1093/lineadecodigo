@@ -14,7 +14,7 @@ public class ReemplazarContenido {
 	public static void main(String[] args) {
 
 		String s = "La pausa la realizó Fernando. En las representaciones de teatro, Fernando era el que mejor llevaba el tempo";
-	    s = s.replaceAll("Fernando", "Maria");
+	    s = s.replaceAll("Fernando", "Pedro");
 	    System.out.println(s);
 		
 	}
