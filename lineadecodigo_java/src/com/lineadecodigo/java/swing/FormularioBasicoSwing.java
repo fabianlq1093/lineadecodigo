@@ -17,7 +17,7 @@ public class FormularioBasicoSwing extends JFrame {
 	private static final long serialVersionUID = 1L;
 
 	public FormularioBasicoSwing() {
-		super("Crear un JTextField");	
+		super("Formulario Básico");	
 		
 		 getContentPane().setLayout(new FlowLayout());
 		
