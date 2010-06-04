@@ -23,8 +23,7 @@ public class Array2String {
 		     cadena =cadena.append(miarray[x]);
 		}
 	   
-	   System.out.println(cadena.toString());  
-	   	   
+	   System.out.println(cadena.toString());   	   	   
 	 }
 		
 
