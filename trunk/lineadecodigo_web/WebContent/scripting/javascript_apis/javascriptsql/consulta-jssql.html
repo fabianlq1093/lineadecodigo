@@ -14,14 +14,14 @@ myJSSQL= new JSSQL();
 // Abrimos la base de datos
 if (!myJSSQL.Open('victor'))
 {
-alert(myJSSQL.GetError()); /
+alert(myJSSQL.GetError()); 
 }
 
 // Consulta
 sql="select Pais from paises"; 
 res=myJSSQL.Query(sql); 
 
-if(res===false)  
+if(res===false) {  
   alert( myJSSQL.GetError() ); 
 } 
 else 
