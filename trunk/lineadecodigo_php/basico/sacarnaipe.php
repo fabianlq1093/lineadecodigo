@@ -2,7 +2,7 @@
 /**
  * @file sacarnaipe.php
  * @version 1.0
- * @author Linea de Codigo (http://lineadecodigo.com)
+ * @author José Sevilla (http://lineadecodigo.com)
  * @date   23/octubre/2010
  * @url    http://lineadecodigo.com/php/sacar-un-naipe-de-la-baraja-con-php/
  * @description Programa Hola Mundo en PHP  
