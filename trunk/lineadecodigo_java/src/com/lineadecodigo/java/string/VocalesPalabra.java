@@ -19,7 +19,7 @@ public class VocalesPalabra {
 		int contador = 0;
 		
 		for(int x=0;x<sPalabra.length();x++) {			
-			if ((sPalabra.charAt(x)=='a') || (sPalabra.charAt(x)=='e') || (sPalabra.charAt(x)=='i') || (sPalabra.charAt(x)=='o') || (sPalabra.charAt(x)=='u')){
+			if ((Character.toLowerCase(sPalabra.charAt(x))=='a') || (Character.toLowerCase(sPalabra.charAt(x))=='e') || (Character.toLowerCase(sPalabra.charAt(x))=='i') || (Character.toLowerCase(sPalabra.charAt(x))=='o') || (Character.toLowerCase(sPalabra.charAt(x))=='u')){
 				contador++;
 			}
 		}
