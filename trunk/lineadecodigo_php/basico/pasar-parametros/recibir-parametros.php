@@ -1,9 +1,11 @@
 <?php
-/*
- * Created on 20/09/2009
- *
- * To change the template for this generated file go to
- * Window - Preferences - PHPeclipse - PHP - Code Templates
+/**
+ * @file hola-mundo.php
+ * @version 1.0
+ * @author Linea de Codigo (http://lineadecodigo.com)
+ * @date   19-septiembre-2009
+ * @url    http://lineadecodigo.com/php/recuperar-datos-de-un-formulario-con-php/
+ * @description Paso de parametros en PHP
  */
  ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
