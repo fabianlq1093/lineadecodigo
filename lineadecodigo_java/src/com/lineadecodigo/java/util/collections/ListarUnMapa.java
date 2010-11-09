@@ -10,6 +10,7 @@ package com.lineadecodigo.java.util.collections;
  */
 
 import java.util.*;
+import java.util.Map.Entry;
 
 public class ListarUnMapa {
 
@@ -25,10 +26,10 @@ public class ListarUnMapa {
 		// ya que no puede haber valores duplicados
 		hm.put("1","Victor");
 		   
-		Iterator it = hm.entrySet().iterator();
+		Iterator<Entry<String,String>> it = hm.entrySet().iterator();
 		
 		while (it.hasNext()) {
-			Map.Entry e = (Map.Entry)it.next();
+			Entry<String,String> e = it.next();
 			System.out.println(e.getKey() + " " + e.getValue());
 		}
 	}
