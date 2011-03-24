@@ -21,7 +21,7 @@
  <?php 
 
 $hostname = '{mail.aulambra.com:143/imap/ssl}INBOX';
-$username = 'usuario@gmail.com';
+$username = 'usuario@aulambra.com';
 $password = 'password';
 
 
