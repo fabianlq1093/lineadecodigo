@@ -11,9 +11,70 @@
 		<servlet-class>
 		com.lineadecodigo.java.servlet.RespuestaXML</servlet-class>
 	</servlet>
+	<servlet>
+		<description>
+		Servlet que accede a la cabecera http X-Forwarded-For</description>
+		<display-name>
+		ObtenerXForwardedFor</display-name>
+		<servlet-name>ObtenerXForwardedFor</servlet-name>
+		<servlet-class>
+		com.lineadecodigo.java.servlet.ObtenerXForwardedFor</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>ServletForward</display-name>
+		<servlet-name>ServletForward</servlet-name>
+		<servlet-class>
+		com.lineadecodigo.java.servlet.ServletForward</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>MiPrimerServlet</display-name>
+		<servlet-name>MiPrimerServlet</servlet-name>
+		<servlet-class>
+		com.lineadecodigo.java.servlet.MiPrimerServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>ParametrosInicio</display-name>
+		<servlet-name>ParametrosInicio</servlet-name>
+		<servlet-class>
+		com.lineadecodigo.java.servlet.ParametrosInicio</servlet-class>
+		<init-param>
+			<description>
+			Nivel al que establecemos los logs</description>
+			<param-name>NivelLog</param-name>
+			<param-value>DEBUG</param-value>
+		</init-param>
+		<init-param>
+			<description>
+			Número de peticiones que vamos a aceptar</description>
+			<param-name>NumeroPeticiones</param-name>
+			<param-value>8</param-value>
+		</init-param>
+	</servlet>
 	<servlet-mapping>
 		<servlet-name>RespuestaXML</servlet-name>
 		<url-pattern>/RespuestaXML</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ObtenerXForwardedFor</servlet-name>
+		<url-pattern>/ObtenerXForwardedFor</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ServletForward</servlet-name>
+		<url-pattern>/ServletForward</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>MiPrimerServlet</servlet-name>
+		<url-pattern>/MiPrimerServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ParametrosInicio</servlet-name>
+		<url-pattern>/ParametrosInicio</url-pattern>
 	</servlet-mapping>
 	<welcome-file-list>
 		<welcome-file>index.html</welcome-file>
