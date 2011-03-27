@@ -19,24 +19,23 @@ public class ConexionBaseDatos {
 	    PreparedStatement stmt = null;
 	    ResultSet rs = null;
 
-	    // DRIVERS TIPO1
-	    String sDriver = "sun.jdbc.odbc.JdbcOdbcDriver";
-	    String sURL = "jdbc:odbc:prueba";
+	    String sDriver = "com.mysql.jdbc.Driver";
+	    String sURL = "jdbc:mysql://localhost:3306/lineadecodigo";
 
 	    try {
 
 	      Class.forName(sDriver).newInstance();    
-	      con = DriverManager.getConnection(sURL);
+	      con = DriverManager.getConnection(sURL,"root","");
 
 	      try {
 
 	        // La Query
-	        stmt = con.prepareStatement("SELECT titulo FROM libros");
+	        stmt = con.prepareStatement("SELECT pais FROM paises");
 	        rs = stmt.executeQuery();
 	   
 	        // Recorremos el resultado
 	        while (rs.next())
-	          System.out.println (rs.getString("titulo"));
+	          System.out.println (rs.getString("pais"));
 
 	      } catch (SQLException sqle) { 
 	           System.out.println("Error en la ejecución:" 
