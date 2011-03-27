@@ -1,53 +1,45 @@
 package com.lineadecodigo.java.jdbc;
 
 /**
- * @file InsertarDatos.java
- * @version 1.2
+ * @file ActualizarDatos.java
+ * @version 1.0
  * @author Linea de Codigo (http://lineadecodigo.com)
- * @date   7-junio-2007
- * @url  http://lineadecodigo.com/2007/06/07/insertar-datos-con-jdbc/
- * @description Realizar inserciones de datos en una BD mediante INSERT y JDBC.  
+ * @date   27-marzo-2011
+ * @url  http://lineadecodigo.com/java/actualizar-datos-con-jdbc/
+ * @description Utilización de JDBC y una sentencia UPDATE para actualizar los datos de una base de datos.  
  */
 
-import java.sql.*;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
 
-public class InsertarDatos {
+public class ActualizarDatos {
 
 	public static void main(String[] args) {
-		
 		Connection con = null;
 	    PreparedStatement stmt = null;
 		
-
 		// Definimos el driver y la url
 	    String sDriver = "com.mysql.jdbc.Driver";
 	    String sURL = "jdbc:mysql://localhost:3306/lineadecodigo";
-
 	    
 	    // Cargamos el driver y realizamos la conexión
 	    try{
 		Class.forName(sDriver).newInstance();    
-		con = DriverManager.getConnection(sURL,"root","");
+		con = DriverManager.getConnection(sURL,"root","");		      
 		      
+		stmt = con.prepareStatement("UPDATE paises SET pais=? WHERE codigo=?");
+		stmt.setString(1,"España");
+		stmt.setString(2,"ES");
 
-		String sISBN = "84-9815-212-7";
-		String sTitulo = "Yo, Claudio";
-		String sDescripcion="Supuesta autobiografía de Claudio";
-		String sCategoria = "Novela Histórica";
-		int idAutor = 3;
-		      
-		stmt = con.prepareStatement("INSERT INTO libros VALUES (?,?,?,?,?)");
-
-	    stmt.setString(1,sISBN);
-		stmt.setInt(2,idAutor);
-		stmt.setString(3,sTitulo);
-		stmt.setString(4,sDescripcion);
-		stmt.setString(5,sCategoria);
-		      
 		int retorno = stmt.executeUpdate();
+				      		
+		if (retorno>0) {
+			System.out.println("Actualización ejecutada correctamente");	
+		}
 		
-		if (retorno>0)
-			System.out.println("Insertado correctamente");      
+		      
 		      
 	    } catch (SQLException sqle){
 	    	System.out.println("SQLState: " 
@@ -68,6 +60,7 @@ public class InsertarDatos {
 	    		}
 	    	}
 	    }		
+
 	}
 
 }

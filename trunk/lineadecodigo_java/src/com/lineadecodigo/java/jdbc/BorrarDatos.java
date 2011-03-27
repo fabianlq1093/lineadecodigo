@@ -21,18 +21,16 @@ public class BorrarDatos {
 		Connection con = null;
 	    PreparedStatement stmt = null;
 		
-
 		// Definimos el driver y la url
 	    String sDriver = "com.mysql.jdbc.Driver";
-	    String sURL = "jdbc:mysql://localhost:3306/aulambra";
-
+	    String sURL = "jdbc:mysql://localhost:3306/lineadecodigo";
 	    
 	    // Cargamos el driver y realizamos la conexión
 	    try{
 		Class.forName(sDriver).newInstance();    
-		con = DriverManager.getConnection(sURL,"root","victor");		      
+		con = DriverManager.getConnection(sURL,"root","");		      
 		      
-		stmt = con.prepareStatement("DELETE FROM Tabla");
+		stmt = con.prepareStatement("DELETE FROM paises");
 		int retorno = stmt.executeUpdate();		      
 				      
 		System.out.println(retorno);      
