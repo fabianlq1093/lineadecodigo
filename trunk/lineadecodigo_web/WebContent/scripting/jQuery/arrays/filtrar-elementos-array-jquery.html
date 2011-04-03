@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Filtrar Elementos de un Array</title>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.4.4.min.js"></script>
+</head>
+<body>
+
+<h1>Filtrar Elementos de un Array</h1>
+
+<span id="resultado"></span>
+
+<script type="text/javascript">
+
+function mayorQueCinco(elemento,indice){
+	return (elemento <= 5);
+}
+
+var a=[1,2,3,4,5,6,7,8,9,10];
+a = jQuery.grep(a,mayorQueCinco);
+$("#resultado").text(a.join(", "));
+
+</script>
+
+<hr>
+Art&iacute;culo disponible en: <a href="http://lineadecodigo.com/jquery/xxx/">http://lineadecodigo.com/jquery/xxx/</a><br/>
+<a href="http://lineadecodigo.com" title="Linea de Codigo">lineadecodigo.com</a>
+
+
+</body>
+</html>
