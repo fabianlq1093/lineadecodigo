@@ -1,7 +1,7 @@
 package com.lineadecodigo.java.basico;
 
 /**
- * @file NumeroCapicua.java
+ * @file NumeroDigitos.java
  * @version 1.0
  * @author Linea de Codigo (http://lineadecodigo.com)
  * @date  14-mayo-2011
