@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Seleccionar si no ha cambiado el texto</title>
+<script type="text/javascript" src="../jquery-1.2.6.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){	
+	$("textarea").focus(function(){	    
+	    if(this.value == this.defaultValue){
+	        this.select();
+	    }
+	});
+});	
+</script>
+</head>
+<body>
+<h1>Seleccionar si no ha cambiado el texto</h1>
+
+<form id="miform">
+	<label for="texto">Inserta texto:</label>
+	<input id="texto" type="text" value="Texto por defecto" size="100"/><br/>
+	<label for="areatexto">Cada vez que pinches en el &aacute;rea de texto se selecionará. Esto sucederá mientras no cambies el contenido original del mismo.</label><br/>
+	<textarea id="areatexto" cols="25" rows="8">Texto por defecto</textarea><br/>
+</form>
+
+<br/><br/>
+<hr>
+Art&iacute;culo disponible en: <a href="http://lineadecodigo.com/jquery/seleccionar-un-texto-solo-si-no-ha-cambiado/">http://lineadecodigo.com/jquery/seleccionar-un-texto-solo-si-no-ha-cambiado/</a><br/>
+<a href="http://lineadecodigo.com" title="Linea de Codigo">lineadecodigo.com</a>
+
+</body>
+</html>
