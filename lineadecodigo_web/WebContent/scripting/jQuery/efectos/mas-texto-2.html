@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Mas texto...</title>
+<style type="text/css">
+.more {
+	cursor:pointer;
+	background-color: #ccf;
+	}
+.complete {
+	display:none;
+	}
+</style>
+<script type="text/javascript" src="../jquery.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function(){	
+	
+	$(".more").toggle(function() {
+	    $(this).text("Leer menos...").siblings(".complete").show();
+	}, function() {
+	    $(this).text("Leer mas...").siblings(".complete").hide();
+	});
+	
+});
+</script>
+</head>
+<body>
+
+
+<h1>Efecto más texto (sobre página con estructura predefinida)</h1>
+<span class="summary">
+	<p>Lorem ipsum dolor sit amet, vis alterum feugiat sanctus ea. Affert facete eu cum, ut dicta vitae quo. Cum id aeque option epicuri, nec oblique suscipit ad. Et sea odio adhuc altera. Verterem nominati an mel, his diam consetetur ei. Eligendi principes sed no, ubique patrioque vix cu, soluta veritus percipit vim ex.</p>
+</span>
+<span class="complete">
+	<p>Pro populo dolorem eu. Justo conclusionemque sea ne. At dicat putent eum. Reprimique delicatissimi vel et.</p>
+	<p>Posse constituam pro eu. Sit graecis appetere at, id his quas possit platonem, ius at nobis decore ullamcorper. Vix ne latine iudicabit constituto, justo fastidii eleifend et pro, ei sit solet dicant mediocrem. Te sit cibo percipit persecuti. Debet convenire suavitate ei vis. Pri utinam labitur temporibus ex.</p>
+</span>			
+<span class="more">Leer mas...</span>
+
+<br><br>
+<hr>
+Art&iacute;culo disponible en: <a href="http://lineadecodigo.com/jquery/efecto-leer-mas-texto-simplificado-con-jquery/">http://lineadecodigo.com/jquery/efecto-leer-mas-texto-simplificado-con-jquery/</a><br/>
+<a href="http://lineadecodigo.com" title="Linea de Codigo">lineadecodigo.com</a>
+
+</body>
+</html>
