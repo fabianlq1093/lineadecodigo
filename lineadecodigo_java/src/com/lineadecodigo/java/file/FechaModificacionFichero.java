@@ -6,7 +6,7 @@ import java.util.Date;
 import java.util.GregorianCalendar;
 
 /**
- * @file ConversorMonedas.java
+ * @file FechaModificacionFichero.java
  * @version 1.0
  * @author Linea de Codigo (http://lineadecodigo.com)
  * @date   19-enero-2012
