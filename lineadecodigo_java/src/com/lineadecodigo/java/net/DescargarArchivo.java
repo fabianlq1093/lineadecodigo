@@ -2,8 +2,8 @@ package com.lineadecodigo.java.net;
 
 /**
  * @file DescargarArchivo.java
- * @version 1.1
- * @author Feffo (http://lineadecodigo.com)
+ * @version 1.0
+ * @author  Feffo Calendino (http://lineadecodigo.com)
  * @date   21-marzo-2012
  * @url    http://lineadecodigo.com/java/como-descargar-un-archivo-en-java/
  * @description Lectura del contenido de una URL  
