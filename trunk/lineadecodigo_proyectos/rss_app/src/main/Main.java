@@ -29,15 +29,20 @@ public class Main {
 
 	protected static class ReloadThread extends Thread {
 		public void run() {
+			try {
+				Thread.sleep(5 * 1000);
+			} catch (InterruptedException e) {
+
+			}
+			
 			while (true) {
 				try {
-					Thread.sleep(2 * 1000);
-
 					Statics.news = Statics.rss.getNews();
 
 					if (tray != null)
 						tray.reload();
 
+					Thread.sleep(5 * 60 * 1000);
 				} catch (InterruptedException e) {
 
 				}
