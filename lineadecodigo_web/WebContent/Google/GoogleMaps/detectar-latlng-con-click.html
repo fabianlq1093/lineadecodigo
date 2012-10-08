@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+<meta charset="utf-8">
+<style>
+html, body, #map_canvas {                
+  height: 100%;
+}
+</style>
+<title>Detectar Longitud y Latitud en Google Maps v3</title>
+<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+<script>
+
+	var map;
+	function initialize(){  
+		
+		
+		var myLatlng = new google.maps.LatLng(40.674389,-4.700432);
+		var mapOptions = {
+		          zoom: 12,
+		          center: myLatlng,
+		          mapTypeId: google.maps.MapTypeId.ROADMAP
+		        };
+					
+		map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);		
+		
+		google.maps.event.addListener(map, 'click', function(event) {
+			document.getElementById("posicion").innerHTML = event.latLng;		    
+		  });
+
+	   
+	}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+
+</script>
+</head>
+<body>
+
+<h1>Detectar Longitud y Latitud en Google Maps v3</h1>
+<div id="map_canvas" style="width: 50%; height: 50%"></div>
+Posicion: <span id="posicion"></span>
+
+<br/><br/>
+<hr>
+Art&iacute;culo disponible en: <a href="http://lineadecodigo.com/google/detectar-la-longitud-y-latitud-sobre-un-mapa-de-google-maps/">http://lineadecodigo.com/google/detectar-la-longitud-y-latitud-sobre-un-mapa-de-google-maps/</a><br/>
+<a href="http://lineadecodigo.com" title="Linea de Codigo">lineadecodigo.com</a>
+
+
+</body>
+</html>
+
+
+
+
