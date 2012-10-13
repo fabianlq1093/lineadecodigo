@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+<meta charset="utf-8">
+   	<style>
+      html, body, #map_canvas {                
+        height: 100%;
+      }
+    </style>
+<title>Eliminar marcas de un mapa de Google Maps</title>
+
+<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+
+
+</head>
+<body>
+
+<h1>Cargando Google Maps v3</h1>
+<p>Pulsa sobre el mapa e iras añadiendo nuevas marcas.<br/>
+Cuando quieras borrar las marcas solo tienes que pulsar sobre el botón <strong>"Eliminar marcas"</strong>.</p>
+<div id="map_canvas" style="width: 50%; height: 50%"></div>
+<button id="borrar">Eliminar marcas de un mapa de Google Maps</button>
+
+<script>
+
+	var map;
+	var puntos = [];
+	
+	function initialize(){  
+		
+		
+		var myLatlng = new google.maps.LatLng(40.674389,-4.700432);
+		var mapOptions = {
+		          zoom: 12,
+		          center: myLatlng,
+		          mapTypeId: google.maps.MapTypeId.ROADMAP
+		        };
+					
+		map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);		
+		
+		google.maps.event.addListener(map, 'click', function(event) {
+		    addMark(event.latLng);
+		  });
+
+	   
+	}
+	
+	function addMark(location){
+		marker = new google.maps.Marker({
+			position: location,
+			map: map
+		});				
+		puntos.push(marker);
+	}
+	
+
+	google.maps.event.addDomListener(window, 'load', initialize);
+
+	var b = document.getElementById("borrar");
+	b.addEventListener("click",function(){
+		
+		// Recorrempos el array de puntos y los borramos		
+		for (p in puntos) {
+      		puntos[p].setMap(null);
+    	}		
+	});
+	
+	
+</script>
+
+<br/><br/>
+<hr>
+Art&iacute;culo disponible en: <a href="http://lineadecodigo.com/google/borrar-marcas-de-un-mapa-de-google-maps/">http://lineadecodigo.com/google/borrar-marcas-de-un-mapa-de-google-maps/</a><br/>
+<a href="http://lineadecodigo.com" title="Linea de Codigo">lineadecodigo.com</a>
+
+
+</body>
+</html>
+
+
+
+
