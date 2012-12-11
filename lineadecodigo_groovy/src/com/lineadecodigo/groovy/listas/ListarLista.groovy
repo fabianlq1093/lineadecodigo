@@ -1,7 +1,7 @@
 package com.lineadecodigo.groovy.listas
 
 /**
- * @file HolaMundo.groovy
+ * @file ListarLista.groovy
  * @version 1.0
  * @author Victor Cuervo (http://lineadecodigo.com)
  * @date   10-diciembre-2012
