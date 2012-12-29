@@ -10,6 +10,11 @@ echo "Una cadena toda en min&uacute;sculas ---- ".strtolower("hola USUARIO<br>")
 echo "Una cadena con la primera letra en may&uacute;sculas ---- ".ucfirst("hola usuario<br>"); 
 echo "Una cadena en formato t&iacute;tulo ---- ".ucwords ("hola usuario<br>");
 
+
+$str = "hola usuario";
+$str = mb_convert_case($str, MB_CASE_TITLE, "UTF-8");
+echo "La cadena en formato titulo utilizando mb_convert ---- ".$str;
+
 ?>
 
 <br/><br/>
