@@ -3,7 +3,7 @@ package com.lineadecodigo.java.io;
 /**
  * @file CopiarFicheros.java
  * @version 1.0
- * @author Chistian Gimenez (http://lineadecodigo.com/author/xhrist14n/)
+ * @author Chistian Portilla (http://lineadecodigo.com/author/xhrist14n/)
  * @date   5-enero-2013
  * @url    http://lineadecodigo.com/java/contar-las-vocales-de-un-fichero-en-java/
  * @description Programa que lee el nœmero de vocales de un fichero
