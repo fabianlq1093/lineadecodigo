@@ -20,7 +20,7 @@
 
 <?php 
 
-@ $db = new mysqli(localhost, "root", "a", "biblioteca");
+@ $db = new mysqli(localhost, "root", "", "biblioteca");
 
 if ($db->connect_error)
 	die('Error de Conexion ('.$db->connect_errno.')'.$db->connect_error);
