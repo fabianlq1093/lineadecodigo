@@ -3,8 +3,8 @@ package com.lineadecodigo.java.basico;
 /**
  * @file MesEnTexto.java
  * @version 1.0
- * @author Christian Portilla (http://lineadecodigo.com/author/xhrist14n/)
- * @date   02-octubre-2010
+ * @author Christian Portilla Pauca (http://lineadecodigo.com/author/xhrist14n/)
+ * @date   14.enero.2013
  * @url    http://lineadecodigo.com/java/convertir-un-mes-en-texto-con-java/
  * @description Convierte un mes numérico en texto.
  */
