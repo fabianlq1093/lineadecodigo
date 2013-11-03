@@ -1,16 +1,16 @@
 /**
- * @file borrar-db.js
+ * @file notequal.js
  * @version 1.0
- * @author Linea de Codigo (http://lineadecodigo.com)
+ * @author Víctor Cuervo (http://lineadecodigo.com)
  * @date   2-noviembre-2013
- * @url  http://lineadecodigo.com/mongodb/filtrar-datos-en-mongodb/
- * @description Utilización del método find para filtrar datos en MongoDB.
+ * @url  http://lineadecodigo.com/mongodb/mongodb-not-equal/
+ * @description Como conseguir consultas de negación mediante MongoDB Not Equal..
  */
 
 conn = new Mongo();
 db = conn.getDB("demografia");
 
-cursor = db.ciudades.find({ciudad:'Madrid'});
+cursor = db.ciudades.find({ciudad:{$ne:'Madrid'}});
 
 while (cursor.hasNext()) {
   printjson(cursor.next());
