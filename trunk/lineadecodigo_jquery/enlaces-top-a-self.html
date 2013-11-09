@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Enlaces con target blank</title>
+<script type="text/javascript" src="http://lineadecodigo.com/js/jquery/jquery.js"></script>
+<script type="text/javascript">
+ 
+$(document).ready(function(){
+	$("a[target*='_top']")
+		.attr({target: "_self"}); 
+});
+ 
+</script>
+</head>
+<body>
+<h1>Enlaces con target blank</h1>
+<a href="http://www.google.com" target="_top" title="Google">Google</a><br/>
+<a href="http://lineadecodigo.com" target="_top"  title="Linea de Código">Linea de Código</a><br/>
+<a href="http://www.manualweb.net" title="Manual Web">Manual Web</a><br/>
+<a href="http://www.w3api.com" title="W3Api">W3Api.com</a>
+
+
+<br><br>
+<hr>
+Art&iacute;culo disponible en: <a href="http://lineadecodigo.com/jquery/enlaces-de-top-a-self-con-jquery/">http://lineadecodigo.com/jquery/enlaces-de-top-a-self-con-jquery/</a><br/>
+<a href="http://lineadecodigo.com" title="Linea de Codigo">lineadecodigo.com</a>
+
+</body>
+</html>

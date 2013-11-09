@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Seleccionar contenido de un campo del formulario</title>
+<script type="text/javascript" src="http://lineadecodigo.com/js/jquery/jquery.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+
+	// Con este código seleccionamos el contenido del campo con el id 'texto'
+	$("#texto").select();
+
+	// Con este código seleccionamos el contenido de textarea bajo petición
+	$("#selectall").click( function(){
+		$("#areatexto").select();
+		return false;
+	});
+		
+});	
+</script>
+</head>
+<body>
+<h1>Seleccionar contenido de un campo del formulario</h1>
+
+<form id="miform">
+	<label for="texto">Inserta texto:</label>
+	<input id="texto" type="text" value="Texto por defecto" size="100"/><br/>	
+	<textarea id="areatexto">Texto por defecto</textarea><br/>
+	<button id="selectall">Seleccionar todo el texto</button>
+</form>
+
+<br/><br/>
+<hr>
+Art&iacute;culo disponible en: <a href="http://lineadecodigo.com/jquery/seleccionar-el-texto-de-un-campo/">http://lineadecodigo.com/jquery/seleccionar-el-texto-de-un-campo/</a><br/>
+<a href="http://lineadecodigo.com" title="Linea de Codigo">lineadecodigo.com</a>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<script type="text/javascript" src="http://lineadecodigo.com/js/jquery/jquery.js"></script>
+<script type="text/javascript">
+ 
+$(document).ready(function(){
+
+ $("#carga").click(function() {
+	 $("div#texto").load("test.html");
+   });
+
+ 
+});
+ 
+</script>
+<title>Cargar Fichero HTML con jQuery</title>
+</head>
+<body>
+<h1>Cargar fichero HTML con jQuery</h1>
+<button id="carga">Cargar fichero</button>
+<div id="texto"></div>
+
+<br><br>
+<hr>
+Art&iacute;culo disponible en: <a href="http://lineadecodigo.com/2009/01/25/cargar-un-fichero-con-jquery/">http://lineadecodigo.com/2009/01/25/cargar-un-fichero-con-jquery/</a><br/>
+<a href="http://lineadecodigo.com" title="Linea de Codigo">lineadecodigo.com</a>
+
+
+</body>
+</html>
