@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- 
+ @file documento-bien-formado.xml
+ @version 1.0
+ @author Christian Portilla (http://lineadecodigo.com)
+ @date   12-marzo-2013
+ @url    http://lineadecodigo.com/xml/documento-xml-bien-formado-y-documento-xml-mal-formado/
+ @description Artículo que explica cómo tenemos que montar un documento XML bien formado y que pasa si no las seguimos y acabamos obteniendo un documento XML mal formado.
+ -->
+ 
+<micasa>
+<habitacion id="comedor"> 
+	<mueble>aparador</mueble> 
+	<mueble>sofá</mueble> 
+	<puerta a="balcón" /> 
+	</habitacion>
+</micasa>

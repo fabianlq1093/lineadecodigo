@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+ @file hola-mundo.xml
+ @version 1.0
+ @author Christian Portilla (http://lineadecodigo.com)
+ @date   3-marzo-2013
+ @url    http://lineadecodigo.com/xml/hola-mundo-xml/
+ @description Hola Mundo XML un ejemplo para aprender a realizar tu primer documento XML explicado paso a paso.
+ -->
+<texto>
+	<mensaje>Hola Mundo</mensaje>
+</texto>

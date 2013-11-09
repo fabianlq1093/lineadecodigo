@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE persona SYSTEM "persona.dtd" >
+<persona>
+  <nombre>John</nombre>
+  <apellido>Clayton</apellido>
+  <direccion>39, Chesham Place</direccion>
+  <movil>630 20 78 96</movil>
+  <foto>john_picture.jpg</foto>
+</persona>

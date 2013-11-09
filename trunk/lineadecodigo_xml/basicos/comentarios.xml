@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+ @file comentarios.xml
+ @version 1.0
+ @author Christian Portilla (http://lineadecodigo.com)
+ @date   3-marzo-2013
+ @url    http://lineadecodigo.com/xml/crear-comentarios-xml/
+ @description Artículo que nos muestra como podemos crear comentarios XML dentro de los documentos XML para adjuntar una buena documentación.
+ -->
+
+<!--  Comentario en una línea -->
+
+<!--
+
+  Comentario en varias líneas
+
+  Objeto Persona 
+  @Persona 
+  Atributo nombre 
+  Atributo apellidos
+  
+-->
+  
+  
+<persona>
+	<nombre>Juan</nombre>
+	<apellidos>Infinito</apellidos>
+</persona>
+
+

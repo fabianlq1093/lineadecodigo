@@ -1,0 +1,7 @@
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellido (#PCDATA)>
+<!ELEMENT direccion (#PCDATA)>
+<!ELEMENT telefono (#PCDATA)>
+<!ELEMENT movil (#PCDATA)>
+<!ELEMENT foto (#PCDATA)>
+<!ELEMENT persona (nombre,apellido+,direccion,(telefono|movil),foto?)>
