@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Recorrer un array</title>
+</head>
+<body>
+<h1>Recorrer un array</h1>
+
+Los elementos del array son... <br/>
+<script type="text/vbscript">
+
+'Lo primero es cargar el array con datos
+'Esto lo vamos a hacer "a lo bestia"
+
+dim miArray(4)
+
+'Primera fila
+miArray(0) = "Avila"
+miArray(1) = "Salamanca"
+miArray(2) = "Madrid"
+miArray(3) = "Santander"
+   
+
+for x=0 to UBound(miArray)   
+  document.write (miArray(x)+ "<br>")
+next
+</script>
+
+<hr>
+Art&iacute;culo disponible en: <a href="http://lineadecodigo.com/vbscript/recorrer-un-array-en-vbscript/">http://lineadecodigo.com/vbscript/recorrer-un-array-en-vbscript/</a><br/>
+<a href="http://lineadecodigo.com" title="Linea de Codigo">lineadecodigo.com</a>
+
+</body>
+</html>
