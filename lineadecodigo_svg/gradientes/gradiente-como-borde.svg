@@ -1,0 +1,25 @@
+<?xml version="1.0" standalone="no"?>
+   <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" 
+   "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!--
+@file gradiente-como-borde.svg
+@version 1.1
+@author Linea de Codigo (http://lineadecodigo.com)
+@date 5-febrero-2008
+@url http://lineadecodigo.com/2008/02/07/borde-con-gradiente-lineal/
+@description Utilización de un gradiente como borde de un circulo
+-->
+
+<svg xmlns="http://www.w3.org/2000/svg">
+
+<defs>
+ <linearGradient id="rojo_naranja" x1="0%" y1="0%" x2="100%" y2="0%">
+  <stop offset="30%" stop-color="#f00"/>
+  <stop offset="60%" stop-color="#ff0"/>
+ </linearGradient>
+</defs>
+
+<circle cx="600" cy="200" r="100" style="fill:#fff"
+    stroke="url(#rojo_naranja)" stroke-width="2"/>
+
+</svg> 

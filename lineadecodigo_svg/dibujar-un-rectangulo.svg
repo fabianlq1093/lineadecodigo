@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" 
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<!--
+@file dibujar-un-rectangulo.svg
+@version 1.0
+@author Linea de Codigo (http://lineadecodigo.com)
+@date 02-marzo-2009
+@url http://lineadecodigo.com/2009/03/02/dibujar-un-rectangulo-con-svg/
+@description Dibujando un rectángulo con SVG  
+-->
+
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" x="0" y="0">
+  <rect x="50" y="50" width="200" height="100" style="fill:red;"/>
+</svg>
