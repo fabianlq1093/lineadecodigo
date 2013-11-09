@@ -1,0 +1,19 @@
+<?xml version="1.0" standalone="no"?>
+   <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" 
+   "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<!--
+@file dibujando-un-circulo.svg
+@version 1.1
+@author Linea de Codigo (http://lineadecodigo.com)
+@date 28-diciembre-2007
+@url http://lineadecodigo.com/2007/12/28/circulos-con-borde-en-svg/
+@description Dibujar un circulo con borde mediante SVG 
+-->
+
+<svg xmlns="http://www.w3.org/2000/svg"
+   width="300" height="300">
+
+<circle cx="100" cy="100" r="50" stroke="blue" stroke-width="10" style="fill:cyan;"/>
+
+</svg>

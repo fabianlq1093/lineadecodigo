@@ -1,0 +1,25 @@
+<?xml version="1.0" standalone="no"?>
+   <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" 
+   "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!--
+@file gradiente-lineal-vertical.svg
+@version 1.1
+@author Linea de Codigo (http://lineadecodigo.com)
+@date 28-enero-2008
+@urlhttp://lineadecodigo.com/2008/01/28/gradiente-lineal-vertical/
+@description Utilización de un gradiente lineal vertical dentro de un circulo.
+-->
+
+<svg xmlns="http://www.w3.org/2000/svg">
+
+<defs>
+ <linearGradient id="rojo_naranja" x1="0%" y1="0%" x2="0%" y2="100%">
+   <stop offset="20%" stop-color="#f00"/>
+   <stop offset="80%" stop-color="#ff0"/>
+ </linearGradient>
+</defs>
+
+<circle cx="600" cy="200" r="100" style="fill:url(#rojo_naranja)"
+   stroke="#000" stroke-width="2"/>
+
+</svg> 

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" 
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<!--
+@file rectangulo-esquinas-redondeadas.svg
+@version 1.1
+@author Linea de Codigo (http://lineadecodigo.com)
+@date 23-diciembre-2007
+@url http://lineadecodigo.com/2007/12/24/rectangulo-redondeado-en-svg/
+@description Como redondear las esquinas de un rectangulo con SVG  
+-->
+
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="600" x="0" y="0">
+
+<rect x="50" y="50" width="200" height="100" rx="20" ry="20" style="fill:blue;"/>
+<rect x="50" y="200" rx="100" ry="100" width="100" height="100" style="fill:red;"/>
+<rect x="50" y="350" rx="100" ry="200" width="200" height="100" style="fill:green;"/>
+
+</svg>
