@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Divisores Autom&aacute;ticos con jQuery Mobile</title>
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+<script src="http://code.jquery.com/jquery.min.js"></script>
+<script src="http://code.jquery.com/mobile/latest/jquery.mobile.js"></script>
+<script>
+$(document).ready(function(){
+	$("#milista").listview({
+  	autodividers: true,
+  	autodividersSelector: function ( li ) {  		
+	  /*  Generar una cadena basada en el contenido de li
+	  		Tiene que retornar el divisor asociado a ese li */
+  	}
+	});
+});
+</script>
+</head>
+<body>
+
+<div data-role="page">
+
+	<div data-role="header">
+		<h1>Divisores Autom&aacute;ticos con jQuery Mobile</h1>
+	</div>
+
+	<div data-role="content" >	
+		<p>Lista con elementos agrupados utilizando divisores autom&aacute;ticos</p>
+		
+		<ul id="milista" data-role="listview" data-inset="true" data-autodividers="true">			
+			<li><a href="#">Casablanca</a></li>
+			<li><a href="#">Charada</a></li>			
+			<li><a href="#">Dos Hombres y Un Destino</a></li>			
+			<li><a href="#">Espartaco</a></li>		
+			<li><a href="#">El Golpe</a></li>
+			<li><a href="#">El Silencio de los Corderos</a></li>													
+			<li><a href="#">El Padrino</a></li>
+			<li><a href="#">Granujas a todo ritmo</a></li>	
+			<li><a href="#">La Naranja Mecánica</a></li>
+			<li><a href="#">La Guerra de las Galaxias</a></li>
+			<li><a href="#">Pulp Fiction</a></li>			
+			<li><a href="#">Sin Perdón</a></li>						
+			<li><a href="#">Spy Game</a></li>			
+			<li><a href="#">Sin City</a></li>
+		</ul>		
+								
+	</div>
+	
+	<div data-role="footer">
+		<h4>Art&iacute;culo disponible en: <a href="http://lineadecodigo.com/desarrollo-movil/divisores-automaticos-de-listas-con-jquery-mobile/">Divisores Autom&aacute;ticos con jQuery Mobile</a><br/>
+		&copy;2012 - <a href="http://lineadecodigo.com" title="Linea de Codigo">Linea de Codigo</a></h4>
+	</div>
+
+</div>
+
+
+
+
+</body>
+</html>

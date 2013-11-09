@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Control de Rotacion</title>
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+<script src="http://code.jquery.com/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+	$(window).bind("orientationchange", function(event){		
+		if (event.orientation)		
+			$("#contenido").html("Me han reorientado a " + event.orientation);
+	});
+	$(window).trigger("orientationchange");
+});
+</script>
+ 
+<!-- <script src="http://code.jquery.com/mobile/latest/jquery.mobile.js"><	/script> -->
+<script src="http://code.jquery.com/mobile/1.0a2/jquery.mobile-1.0a2.min.js"></script>
+</head>
+<body>
+
+<div data-role="page">
+
+	<div data-role="header">
+		<h1>Control de Rotacion</h1>
+	</div>
+
+	<div data-role="content" >	
+		<p>Ejemplo que controla la rotaci&oacute;n del dispositivo movil.</p>		
+		<span id="contenido">Inicio de la Aplicación</span>
+	</div>
+	
+	<div data-role="footer">
+		<h4>Art&iacute;culo disponible en: <a href="http://lineadecodigo.com/desarrollo-movil/detectar-la-rotacion-del-dispositivo-con-jquery-mobile/">Control de Rotacion</a><br/>
+		&copy;2012 - <a href="http://lineadecodigo.com" title="Linea de Codigo">Linea de Codigo</a></h4>
+	</div>
+
+</div>
+
+</body>
+</html>
