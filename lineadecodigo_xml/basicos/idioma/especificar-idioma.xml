@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+ @file especificar-idioma.xml
+ @version 1.0
+ @author Christian Portilla (http://lineadecodigo.com)
+ @date   3-marzo-2013
+ @url    http://lineadecodigo.com/xml/especificar-el-idioma-de-un-documento-con-xml-lang/
+ @description Utilización del atributo XML lang para definir el idioma de un documento XML. Pros y contras de su utilización. Posible uso de langcode como alternativa.
+ -->
+ 
+<persona xml:lang="es">
+	<nombre>Juan</nombre>
+	<apellido>Sin Tierra</apellido>
+</persona>
