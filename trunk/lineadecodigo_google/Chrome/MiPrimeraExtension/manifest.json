@@ -1,0 +1,9 @@
+{
+  "name": "Mi Primera Extension",
+  "version": "1.0",
+  "description": "Extension que dice hola mundo",
+  "browser_action": {
+    "default_icon": "logo.ico",
+    "popup": "miprimeraextension.html"
+  }
+}
