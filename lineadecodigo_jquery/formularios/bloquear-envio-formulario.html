@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Bloquear envío del formulario</title>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.4.4.min.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function(){
+	$("#formulario").submit(function() {
+		var x = $("#valor").val();
+		if (x!="enviar") {
+			alert("Valor introducido no válido");		
+			return false;
+		} else 
+			return true;			
+ 	});
+});
+
+</script>
+
+</head>
+<body>
+
+<h1>Bloquear envío del formulario</h1>
+
+<form id="formulario" action="post.php">
+<label for="valor">Inserta un valor: </label><input id="valor" type="text" size="10">
+<input type="submit" value="Enviar"/>
+</form>
+ 
+<br><br>
+<hr>
+Art&iacute;culo disponible en: <a href="http://lineadecodigo.com/jquery/bloquear-el-envio-de-un-formulario-con-jquery/">http://lineadecodigo.com/jquery/bloquear-el-envio-de-un-formulario-con-jquery/</a><br/>
+<a href="http://lineadecodigo.com" title="Linea de Codigo">lineadecodigo.com</a>
+ 
+</body>
+</html>
