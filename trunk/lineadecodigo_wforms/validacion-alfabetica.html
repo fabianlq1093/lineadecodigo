@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Validacion Alfabetica</title>
+<script type="text/javascript" src="http://lineadecodigo.com/js/wforms/wforms.js"></script>
+<script type="text/javascript">
+wFORMS.behaviors['validation'].errMsg_alpha = "Solo se pueden utilizar caracteres alfabéticos [a-z A-Z]";
+wFORMS.behaviors['validation'].errMsg_notification = "%% error(s) detectado(s). El formulario no se enviará.\nPor favor, chequea la información suministrada."; // %% will be replaced by the actual number of errors
+</script>
+</head>
+<body>
+
+<h1>Validacion Alfab&eacute;tica</h1>
+
+
+<form action="enviar.php">
+<div>
+Entrada Alfab&eacute;tica: <input type="text" class="validate-alpha required"><br>
+<input type="submit" value="Enviar"/>
+</div>
+</form>
+
+<br><br>
+<hr>
+Art&iacute;culo disponible en: <a href="http://lineadecodigo.com/2007/08/12/validar-que-un-campo-del-formulario-es-alfabetico-con-wforms/">http://lineadecodigo.com/2007/08/12/validar-que-un-campo-del-formulario-es-alfabetico-con-wforms/</a><br/>
+<a href="http://lineadecodigo.com" title="Linea de Codigo">lineadecodigo.com</a>
+
+</body>
+</html>
