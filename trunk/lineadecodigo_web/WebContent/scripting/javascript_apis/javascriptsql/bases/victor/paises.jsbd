@@ -1,8 +1,0 @@
-_aux['paises']=Array();
-_aux['paises']=[
-[1,"Noruega"],
-[2,"Portugal"],
-[3,"Francia"],
-[4,"Italia"],
-[5,"UK"]
-];
