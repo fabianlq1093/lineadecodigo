@@ -1,7 +1,5 @@
 package com.lineadecodigo.java.util.collections.lista;
 
-
-
 /**
  * @file CrearArrayList.java
  * @version 1.0
