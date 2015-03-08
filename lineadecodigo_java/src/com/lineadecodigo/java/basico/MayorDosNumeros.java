@@ -19,10 +19,10 @@ public class MayorDosNumeros {
 		Scanner reader = new Scanner(System.in);		
 		int iNumero1, iNumero2;
 		
-		System.out.println("Dame el primer número");
+		System.out.println("Dame el primer nœmero");
 		iNumero1 = reader.nextInt();
 		
-		System.out.println("Dame el segundo número");
+		System.out.println("Dame el segundo nœmero");
 		iNumero2 = reader.nextInt();
 		
 		if (iNumero1>iNumero2)
